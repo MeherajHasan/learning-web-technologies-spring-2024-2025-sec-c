@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <h1>Registration Form</h1>
+  <form action="lab2_p2.html" method="get">
+
+    <!-- Basic Input Fields -->
+    <label for="fn">First Name:</label>
+    <input id="fn" type="text" name="first_name" value="" placeholder="First Name" required />
+    <br><br>
+
+    <label for="ln">Last Name:</label>
+    <input id="ln" type="text" name="last_name" value="" placeholder="Last Name" required />
+    <br><br>
+
+    <label for="id">Student ID:</label>
+    <input id="id" type="number" name="studentid" value="" placeholder="Don't use - sign or space" required />
+    <br><br>
+
+    <label for="mail">Email:</label>
+    <input id="mail" type="email" name="email" placeholder="Email ID" required />
+    <br><br>
+
+    <label for="pass">Password:</label>
+    <input id="pass" type="password" name="password" placeholder="8 characters at least" minlength="8" required />
+    <br><br>
+
+    <!-- Gender Selection -->
+    <label for="gender">Gender:</label>
+    <input id="male" type="radio" name="gender" value="male" required />
+    <label for="male">Male</label>
+    <input id="female" type="radio" name="gender" value="female" />
+    <label for="female">Female</label>
+    <br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+    <br><br>
+
+    <!-- Skills Section -->
+    <label>Skills <i>(Select your skills)</i></label>
+    <br>
+    <label><input type="checkbox" name="skills" value="c" /> C</label>
+    <br>
+    <label><input type="checkbox" name="skills" value="cpp" /> C++</label>
+    <br>
+    <label><input type="checkbox" name="skills" value="java" /> Java</label>
+    <br>
+    <label><input type="checkbox" name="skills" value="py" /> Python</label>
+    <br>
+    <label><input type="checkbox" name="skills" value="html" /> HTML</label>
+    <br>
+    <label><input type="checkbox" name="skills" value="css" /> CSS</label>
+    <br>
+    <label><input type="checkbox" name="skills" value="js" /> JavaScript</label>
+    <br><br>
+
+    <!-- Department Selection -->
+    <label for="department">Department:</label>
+    <select id="department" name="department" required>
+      <option value="" disabled selected>-- Select Department --</option>
+      <option value="cse">Computer Science and Engineering</option>
+      <option value="ds">Data Science</option>
+      <option value="cybersec">Cyber Security</option>
+      <option value="eee">Electrical and Electronic Engineering</option>
+      <option value="ipe">Industrial and Productivity Engineering</option>
+      <option value="arch">Architecture</option>
+      <option value="pharma">Pharmacy</option>
+      <option value="bba">Business Administration</option>
+      <option value="eng">English</option>
+      <option value="eco">Economics</option>
+    </select>
+    <br><br>
+
+    <!-- Photo Upload -->
+    <label for="photo">Upload Your Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*" required />
+    <br><br>
+
+    <!-- Buttons for Cancel, Reset, and Submit -->
+    <button type="button" onclick="window.location.href='lab2_p0.html'">Cancel</button>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+
+  </form>
+</body>
+
+</html>

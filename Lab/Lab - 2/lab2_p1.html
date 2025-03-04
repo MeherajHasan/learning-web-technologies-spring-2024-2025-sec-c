@@ -46,11 +46,12 @@
 
     <!-- DOB -->
     <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob" required />
+    <input id="dob" type="date" name="dob" required />
     <br><br>
-    
+
     <!-- Department -->
     <label for="department">Department:</label>
+    <br>
     <select id="department" name="department" required>
       <option value="" disabled selected>-- Select Department --</option>
       <option value="cse">Computer Science and Engineering</option>
@@ -67,26 +68,26 @@
     <br><br>
 
     <!-- Skills -->
-    <label>Skills <i>(Select your skills)</i></label>
+    <label for="skill">Skills <i>(Select your skills)</i></label>
     <br>
-    <label><input type="checkbox" name="skills" value="c" /> C</label>
+    <input id="c" type="checkbox" name="skills[]" value="c" /> C
     <br>
-    <label><input type="checkbox" name="skills" value="cpp" /> C++</label>
+    <input id="cpp" type="checkbox" name="skills[]" value="cpp" /> C++
     <br>
-    <label><input type="checkbox" name="skills" value="java" /> Java</label>
+    <input id="java" type="checkbox" name="skills[]" value="java" /> Java
     <br>
-    <label><input type="checkbox" name="skills" value="py" /> Python</label>
+    <input id="py" type="checkbox" name="skills[]" value="py" /> Python
     <br>
-    <label><input type="checkbox" name="skills" value="html" /> HTML</label>
+    <input id="html" type="checkbox" name="skills[]" value="html" /> HTML
     <br>
-    <label><input type="checkbox" name="skills" value="css" /> CSS</label>
+    <input id="css" type="checkbox" name="skills[]" value="css" /> CSS
     <br>
-    <label><input type="checkbox" name="skills" value="js" /> JavaScript</label>
+    <input id="js" type="checkbox" name="skills[]" value="js" /> JavaScript
     <br><br>
 
     <!-- Photo -->
     <label for="photo">Upload Your Photo:</label>
-    <input type="file" id="photo" name="photo" accept="image/*" required />
+    <input id="photo" type="file" name="photo" accept="image/*" required />
     <br><br>
 
     <!-- Buttons -->

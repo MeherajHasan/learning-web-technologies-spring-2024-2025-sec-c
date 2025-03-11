@@ -1,1 +1,1 @@
-# learning-web-technologies-spring-2024-2025-sec-c
+WebTechnologies

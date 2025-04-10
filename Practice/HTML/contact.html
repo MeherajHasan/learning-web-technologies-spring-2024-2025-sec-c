@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="M Hasan">
+    <meta name="description" content="This page contains all the things that I'm gonna learn in HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!--Fav ICON in the Title tab-->
+    <link rel="icon" href="html.png" type="image/x-icon"> <!--relative reference-->
+
+    <!--Dark theme-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header> <!--only one header per page-->
+        <h1>Fill this form up to contact with us</h1>
+    </header>
+
+    <hr>
+
+    <main> <!--only one main per page-->
+        <article id="">
+            <h2>Contact me!</h2>
+            <p>I'd really love to hear from you!</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="firstName">First Name: </label>
+                            </td>
+                            <td>
+                                <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on"
+                                    required autofocus>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="lastName">Last Name: </label>
+                            </td>
+                            <td>
+                                <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on"
+                                    required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="password">Password: </label>
+                            </td>
+                            <td>
+                                <input type="password" name="password" id="password" placeholder="Minimum 8 digit"
+                                    required>
+                                <!--autocomplete is not support in password-->
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="phone">Telephone: </label>
+                            </td>
+                            <td>
+                                <input type="tel" name="phone" id="phone" placeholder="01XXXXXXXXX" pattern="[0-9]{11}"
+                                    autocomplete="on" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="decade">Favorite Decade: </label>
+                            </td>
+                            <td>
+                                <input type="number" name="decade" id="decade" placeholder="Choose" min="1950"
+                                    max="2020" step="10" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="coffee">Favorite Coffee:</label>
+                            </td>
+                            <td>
+                                <select name="coffee" id="coffee">
+                                    <option value="" disabled selected>Choose your favorite coffee</option>
+
+                                    <!--option grouping-->
+                                    <optgroup label="Coffees">
+                                        <option value="regular">Regular Coffee</option>
+                                        <option value="iced">Iced Coffee</option>
+                                    </optgroup>
+
+                                    <optgroup label="Espressos">
+                                        <option value="latte">Latte</option>
+                                        <option value="cappuccino">Cappuccino</option>
+                                        <option value="cortado">Cortado</option>
+                                        <option value="americano">Americano</option>
+                                    </optgroup>
+                                    <option value="other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <!--important-->
+                        <tr>
+                            <td>
+                                <label for="coffee">Favorite Coffee:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="coffee" id="coffee" list="coffee-list"
+                                    placeholder="Choose your favorite coffee">
+                                <datalist id="coffee-list">
+                                    <option value="Regular Coffee">
+                                    <option value="Iced Coffee">
+                                    <option value="Latte">
+                                    <option value="Cappuccino">
+                                    <option value="Cortado">
+                                    <option value="Americano">
+                                    <option value="Other">
+                                </datalist>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>What is your favorite food?</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="radio" name="food" id="tacos" value="tacos">
+                            </td>
+                            <td>
+                                <label for="tacos">Tacos</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" name="food" id="pizza" value="pizza">
+                            </td>
+                            <td>
+                                <label for="pizza">Pizza</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" name="food" id="other" value="other">
+                            </td>
+                            <td>
+                                <label for="other">Other</label>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+
+    <hr>
+
+    <footer> <!--only one footer per page-->
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">M Hasan</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back To Top</a>
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

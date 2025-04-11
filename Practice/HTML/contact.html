@@ -162,6 +162,79 @@
                         </tr>
                     </table>
                 </fieldset>
+
+                <fieldset>
+                    <legend>Do you have any pets?</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="pets" id="dog" value="dog">
+                            </td>
+                            <td>
+                                <label for="dog">Dog</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="pets" id="cat" value="cat">
+                            </td>
+                            <td>
+                                <label for="cat">Cat</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="pets" id="fish" value="fish">
+                            </td>
+                            <td>
+                                <label for="fish">Fish</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="pets" id="otherPet" value="otherPet">
+                            </td>
+                            <td>
+                                <label for="otherPet">Other</label>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Send Me A Note</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="message">Your message: </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here" required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <table>
+                    <tr>
+                        <td>
+                            <!--every info will be shown in the link-->
+                            <button type="submit">Submit</button>
+                        </td>
+                        <td>
+                            <button type="reset">Reset</button>
+                        </td>
+                        <td>
+                            <!--For sending sensitive infos-->
+                            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                        </td>
+                    </tr>
+                </table>
             </form>
         </article>
     </main>

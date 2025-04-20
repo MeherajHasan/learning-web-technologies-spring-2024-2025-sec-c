@@ -1,0 +1,61 @@
+* { /*not inherited, all elements are selected*/
+    font-family: monospace; 
+    /*Example*/
+    /*border: 2px solid red;*/
+}
+
+body {
+    /*font-size: 22px;*/ /*inherited by all*/
+
+    /*not inherited*/
+    /*border: 2px solid black;*/
+
+    line-height: 1.5;
+    background-color: papayawhip;
+}
+
+button, input, textarea, select {
+    font: inherit; /*FORM generally don't inherit font settings. so forcefully kora lagbe*/
+}
+
+h1 {
+    border: 2px dashed red;
+    width: 50%;
+
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+main {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 2rem;
+    color: purple;
+}
+
+p span {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/* or
+this is more preferable */
+
+.highlight {
+    text-transform: uppercase;
+    background-color: aqua;
+}
+
+.para-color {
+    color: gray;
+}
+
+#second-italic {
+    font-style: italic;
+}

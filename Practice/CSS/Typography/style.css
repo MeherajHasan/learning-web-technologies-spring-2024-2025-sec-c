@@ -6,6 +6,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 1;
     font-style: normal;
+    background-color: papayawhip;
 }
 
 p {
@@ -26,4 +27,51 @@ input, button {
 .transform {
     text-transform: uppercase;
     font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover, a:focus {
+    color: dodgerblue;
+}
+
+a:active {
+    color: red;
+}
+
+ol {
+    list-style: none; /* remove default bullet */
+    padding-left: 2.5em; /* space for custom marker */
+}
+
+ol li {
+    background-image: url("Resources/checked.png");
+    background-repeat: no-repeat;
+    background-size: 1em 1em; /* control size here */
+    background-position: 0 0.2em; /* adjust vertical alignment */
+    padding-left: 1.5em; /* space between image and text */
+}
+
+
+ul {
+    list-style-type: square;
+}
+
+ul li:nth-child(2) {
+    color: brown;
+}
+
+/*Pseudo element*/
+ul ::marker {
+    color: red;
+    font-family: fantasy;
+    font-size: 1.2em;
+    content: "Paid>> ";
 }

@@ -1,0 +1,29 @@
+body {
+    padding: 10%;
+    font-size: 1.5rem;
+
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1;
+    font-style: normal;
+}
+
+p {
+    text-indent: 3em;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+input, button {
+    font: inherit;
+}
+
+.decoration {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.transform {
+    text-transform: uppercase;
+    font-weight: bold;
+}
